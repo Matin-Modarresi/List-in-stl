@@ -1,4 +1,5 @@
 #include <iostream>
+#include<bits/stdc++.h>
 #include <list>
 using namespace std;
 
@@ -20,8 +21,8 @@ int main()
 	list<int>x{1,2,3,4,5};
 	list<int>y{7,8,9};
 	
-	list<int>::iterator itr = x.begin();
-    itr++; // *itr == 2
+	auto itr = x.begin();
+        itr++; // *itr == 2
 	
 	x.splice(itr , y); // x = 1 7 8 9 2 3 4 5	
 	display(x,y);     // y = NULL
